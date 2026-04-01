@@ -1,5 +1,6 @@
 #ifndef node_h
 #define node_h
+#include<iostream>
 class NODE{
      int data;
     NODE *next;

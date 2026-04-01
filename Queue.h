@@ -2,6 +2,8 @@
 #ifndef queue_h
 #define queue_h
 #include "Node.h"
+#include <iostream>
+using namespace std;
 class Queue
 {
     NodePtr headPtr, tailPtr;
