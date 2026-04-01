@@ -20,6 +20,7 @@ int main(int argc, char **argv)
       else
       {
         cout << "Empty queue" << endl; // ADDED!
+        return 0;
       }
     }
     else
