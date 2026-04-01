@@ -41,7 +41,7 @@ int Queue::dequeue()
     int data = headPtr->get_value();
     NodePtr temp = headPtr;
     headPtr = headPtr->get_next();
-    if (headPtr = NULL)
+    if (headPtr == NULL)
     {
         tailPtr = NULL;
     }
