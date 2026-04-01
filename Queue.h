@@ -23,7 +23,7 @@ void Queue::enqueue(int x)
     }
     else
     {
-        tailPtr->get_next();
+        tailPtr->set_next(new_node);
         tailPtr = new_node;
     }
     size++;
@@ -35,7 +35,7 @@ int Queue::dequeue()
     {
         return -1;
     }
-
+ 
     int data = headPtr->get_value();
     NodePtr temp = headPtr;
     headPtr = headPtr->get_next();
