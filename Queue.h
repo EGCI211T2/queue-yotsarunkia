@@ -31,20 +31,21 @@ void Queue::enqueue(int x)
 
 int Queue::dequeue()
 {
-    if (size > 0)
+    if (size == 0)
     {
-        int data = headPtr->get_value();
-        NodePtr temp = headPtr;
-        headPtr = headPtr->get_next();
-        if (headPtr = NULL)
-        {
-            tailPtr = NULL;
-        }
-        delete temp;
-        size--;
-        return data;
+        return -1;
     }
-    return -1;
+
+    int data = headPtr->get_value();
+    NodePtr temp = headPtr;
+    headPtr = headPtr->get_next();
+    if (headPtr = NULL)
+    {
+        tailPtr = NULL;
+    }
+    delete temp;
+    size--;
+    return data;
 }
 
 Queue::Queue()
