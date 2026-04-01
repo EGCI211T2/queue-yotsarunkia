@@ -2,7 +2,7 @@
 #define node_h
 class NODE{
      int data;
-    NODE *nextPtr;
+    NODE *next;
 public:
     NODE(int);
     ~NODE();
@@ -15,11 +15,11 @@ typedef NODE* NodePtr;
 
 NODE::NODE(int x){
     data=x;
-    nextPtr=NULL;
+    next=NULL;
    
 }
 NODE* NODE::get_next(){
-    return nextPtr;
+    return next;
 
 }
 
@@ -30,7 +30,7 @@ int NODE::get_value(){
 
 
 void NODE::set_next(NODE *t){
-     nextPtr=t;
+     next=t;
 
 }
 NODE::~NODE(){
