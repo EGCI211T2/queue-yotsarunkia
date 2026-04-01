@@ -19,7 +19,7 @@ int main(int argc, char **argv)
       }
       else
       {
-        cout << "Empty queue" << endl; // ADDED!
+        cout << "Empty Queue" << endl; // ADDED!
         return 0;
       }
     }
